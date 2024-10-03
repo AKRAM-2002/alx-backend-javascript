@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^9.11.1"
+    
+  },
+  "scripts": {
+     "dev": "node"
+  }
+}
