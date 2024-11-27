@@ -9,3 +9,10 @@ export default function taskBlock(trueOrFalse) {
 
   return [task, task2];
 }
+
+
+// test
+
+
+console.log(taskBlock(true));
+console.log(taskBlock(false));
