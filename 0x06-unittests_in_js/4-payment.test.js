@@ -8,11 +8,11 @@ describe('sendPaymentRequestToApi', function () {
     const calculateNumberStub = sinon.stub(Utils, 'calculateNumber').returns(10);
     const consoleSpy = sinon.spy(console);
 
-    sendPaymentRequestToApi('SUM', 100, 20);
+    sendPaymentRequestToApi(100, 20);
 
     expect(calculateNumberStub.calledWith('SUM', 100, 20)).to.be.true;
     expect(calculateNumberStub.callCount).to.equal(1);
-    expect(consoleSpy.log.calledOnceWithExactly('The total is: 10')).to.be.true;
+    expect(consoleSpy.log.calledWithExactly('The total is: 10')).to.be.true;
     expect(consoleSpy.log.callCount).to.equal(1);
     
     calculateNumberStub.restore();
